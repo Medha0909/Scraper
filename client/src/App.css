@@ -1,0 +1,148 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  transition: background 0.3s, color 0.3s;
+}
+
+.app {
+  padding: 2rem;
+  background: #f9f9f9;
+  color: #333;
+}
+
+.app.dark {
+  background: #121212;
+  color: #f0f0f0;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+header .quote {
+  font-style: italic;
+  margin-top: 0.5rem;
+  color: #777;
+}
+
+.controls {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+input,
+select,
+button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background-color: #0070f3;
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+
+button:hover {
+  background-color: #0059c1;
+}
+
+.grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeIn 0.8s ease forwards;
+}
+
+.app.dark .card {
+  background: #1e1e1e;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.content {
+  padding: 1rem;
+}
+
+.content .date {
+  font-size: 0.85rem;
+  color: #555;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.app.dark .content .date {
+  color: #bbb;
+}
+
+.content h2 {
+  margin: 0.2rem 0;
+  font-size: 1.1rem;
+}
+
+.content p {
+  font-size: 0.9rem;
+  margin: 0.5rem 0 1rem;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.app.dark .info {
+  color: #aaa;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.ticket-button {
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.ticket-button:hover {
+  background-color: #218838;
+}
