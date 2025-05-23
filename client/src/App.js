@@ -28,7 +28,7 @@ const App = () => {
 
   useEffect(() => {
     const fetchEvents = () => {
-      fetch("https://scraper-r2c4.onrender.com//api/events")
+      fetch("https://scraper-r2c4.onrender.com/api/events")
         .then((res) => res.json())
         .then((data) => {
           setEvents(data);
